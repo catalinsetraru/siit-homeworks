@@ -22,7 +22,23 @@ for (var i = 0; i < arr.length ; i++ ){
 }
 
 //Compute the maximum of the elements of an array and display it in the console
-//[vezi curs]
+
+function maxOfList(list) {
+  let i = 0;
+  let max = -Infinity;
+  
+  while(i < list.length) {
+    if (max < list[i]) {
+      max = list[i];
+    }
+    
+    i++;
+  }
+  
+  return max;
+}
+
+console.log(maxOfList([1, 2, 3, 4]));
 
 
 
